@@ -37,3 +37,18 @@ makeRequest("google")
   .then((processedResponse) => {
     console.log(processedResponse);
   });
+
+async function calldata() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error.name);
+    console.log(error.message);
+  }
+}
+
+calldata();
+
+console.log("I am from last");

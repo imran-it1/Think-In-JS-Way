@@ -19,7 +19,9 @@
 //   .then((data) => console.log(data))
 //   .catch((error) => console.log("Error " + error));
 
-// const promise = fetch("https://jsonplaceholder.typicode.com/users");
+// const promise = fetch("https://jsonplaceholder.typicode.com/users", {
+//   method: "GET",
+// });
 // promise
 //   .then((res) => {
 //     console.dir(res);
